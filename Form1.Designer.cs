@@ -7,6 +7,22 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        private Label lblTitulo;
+        private Label lblNumero1;
+        private Label lblNumero2;
+        private TextBox txtNumero1;
+        private TextBox txtNumero2;
+
+        private Button btnSumar;
+        private Button btnRestar;
+        private Button btnMultiplicar;
+        private Button btnDividir;
+
+        private Label lblResultado;
+        private Button btnHistorial;
+        private DataGridView dgvHistorial;
+
+
         /// <summary>
         ///  Clean up any resources being used.
         /// </summary>
@@ -28,10 +44,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            SuspendLayout();
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
+            ResumeLayout(false);
         }
 
         #endregion
